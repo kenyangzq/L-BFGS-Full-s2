@@ -2,6 +2,8 @@
 
 ## Introduction 
 This is the final version of the full-energy implementation of L-BFGS algorithm for minimizing energy on 3d sphere. It uses angle coordinate and can only work on 3d sphere so far. This implementation doesn't include a cutoff function, so the energy is minimized with respect to the entire configuration.  
+
+
 Full version is slower than cutoff version, but the process is more accurate.
 
 The program is compiled using cmake. If the system hasn't installed cmake, then the program may not be compiled in directory other than the clone. 
