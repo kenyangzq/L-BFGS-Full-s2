@@ -1,8 +1,8 @@
-# L-BFGS-Cutoff-s2
+# L-BFGS-full-s2
 
 ## Introduction 
-This is the final version for the cutoff implementation of L-BFGS algorithm for minimizing energy on 3d sphere. It uses angle coordinate
-and can only work on 3d sphere so far. 
+This is the final version of the full-energy implementation of L-BFGS algorithm for minimizing energy on 3d sphere. It uses angle coordinate and can only work on 3d sphere so far. This implementation doesn't include a cutoff function, so the energy is minimized with respect to the entire configuration.  
+Full version is slower than cutoff version, but the process is more accurate.
 
 The program is compiled using cmake. If the system hasn't installed cmake, then the program may not be compiled in directory other than the clone. 
 
@@ -26,7 +26,7 @@ download the control.inp and modify it based on your input.
 
 The exact command to run the program is the same as any binary executable file:   
     `./L-BFGS`   
-By default, the output file generated will be named as output.txt. This implementation also allows to generate output files containing the coordinates. The number of files generated will be exactly the partitionnum. To obtain the outputs, create a folder name output under the L-BFGS-Cutoff-s2 directory. 
+By default, the output file generated will be named as output.txt. This implementation also allows to generate output files containing the coordinates. The number of files generated will be exactly the partitionnum. To obtain the outputs, create a folder name output under the L-BFGS-full directory. 
 
 Note: the outputs will be overwritten after each execution.
 
